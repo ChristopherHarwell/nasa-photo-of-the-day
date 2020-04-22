@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+// import * from 'bootstrap';
+import {Card} from 'reactstrap';
 import GetPhoto from "./Components/GetPhoto";
 
 function App() {
@@ -11,7 +13,10 @@ function App() {
 
         
       </p> */}
-      <GetPhoto/>
+      <Card>
+        <GetPhoto/>
+      </Card>
+      
     </div>
   );
 }

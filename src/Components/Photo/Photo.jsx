@@ -1,4 +1,6 @@
 import React from 'react';
+import {Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button} from 'reactstrap';
 
 const Photo = (props) => {
     if(!props.url) {
@@ -8,9 +10,11 @@ const Photo = (props) => {
     }
     return (
         <div>
-            <h2>Title: {props.title}</h2>
-            <img src={props.url} alt={props.title}/>
-            <p>{props.explanation}</p>
+            <CardBody body>
+                <CardTitle body className='text-center'>{props.title}</CardTitle>
+                <CardImg top width='80%'src={props.url} alt={props.title}/>
+                <CardText body className='text-center'>{props.explanation}</CardText>
+            </CardBody>
         </div>
     );
 };
