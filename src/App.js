@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
 // import * from 'bootstrap';
-import {Card} from 'reactstrap';
-import GetPhoto from "./Components/GetPhoto";
+import {Card} from '@material-ui/core';
+import GetAPODPhoto from "./Components/GetAPODPhoto";
+import GetEARTHPhoto from "./Components/GetEARTHPhoto";
 
 function App() {
   return (
@@ -14,9 +15,11 @@ function App() {
         
       </p> */}
       <Card>
-        <GetPhoto/>
+        <GetAPODPhoto/>
       </Card>
-      
+      <Card>
+        <GetEARTHPhoto/>
+      </Card>
     </div>
   );
 }
